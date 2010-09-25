@@ -11,7 +11,12 @@
 @class MGTwitterEngine;
 
 @interface CreateRequestViewController : UIViewController {
+<<<<<<< HEAD
 	MGTwitterEngine *twitterEngine;
+=======
+
+	NSMutableDictionary *finalDictionary;
+>>>>>>> 84b495f5d4c245926df378b0b7670192574706e5
 }
 
 - (IBAction)tappedLogin;

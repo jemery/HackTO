@@ -12,8 +12,14 @@
 
 @interface ASIHTTPRequestWrapper : NSObject <ASIHTTPRequestDelegate> {
 
+	id _target;
+	SEL _selector;
 }
 
-+ (void)createRequest;
++ (ASIHTTPRequestWrapper *)sharedASIHTTPRequestWrapper;
+
+- (NSDictionary *)parseJson:(NSString *)rspr;
+- (void)createRequest:(NSString *)requestString target:(id)target action:(SEL)selector;
+- (void)getTrendingPosts:(NSInteger)hours target:(id)target action:(SEL)selector;
 
 @end
