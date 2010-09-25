@@ -11,6 +11,7 @@
 
 @interface CreateRequestViewController : UIViewController {
 
+	NSMutableDictionary *finalDictionary;
 }
 
 - (IBAction)tappedLogin;
