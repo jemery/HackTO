@@ -32,6 +32,7 @@
 		9AC7DA36124D2F8A00C94F17 /* PictureTakerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC7DA34124D2F8A00C94F17 /* PictureTakerViewController.m */; };
 		9AC7DA37124D2F8A00C94F17 /* PictureTakerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AC7DA35124D2F8A00C94F17 /* PictureTakerView.xib */; };
 		9AC7DAF3124D4E6B00C94F17 /* libexif.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC7DAE8124D4E4400C94F17 /* libexif.a */; };
+		DAEB35B1124E5743006C05B6 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEB35B0124E5743006C05B6 /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,14 +40,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 9AC7DAE0124D4E4400C94F17 /* libexif.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D2AAC046055464E500DB518D /* libexif.a */;
+			remoteGlobalIDString = D2AAC046055464E500DB518D;
 			remoteInfo = libexif;
 		};
 		9AC7DB78124D541E00C94F17 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9AC7DAE0124D4E4400C94F17 /* libexif.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = D2AAC045055464E500DB518D /* libexif */;
+			remoteGlobalIDString = D2AAC045055464E500DB518D;
 			remoteInfo = libexif;
 		};
 /* End PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		9AC7DA34124D2F8A00C94F17 /* PictureTakerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureTakerViewController.m; sourceTree = "<group>"; };
 		9AC7DA35124D2F8A00C94F17 /* PictureTakerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureTakerView.xib; sourceTree = "<group>"; };
 		9AC7DAE0124D4E4400C94F17 /* libexif.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libexif.xcodeproj; path = "libexif-iphone-0.6.17/libexif.xcodeproj"; sourceTree = "<group>"; };
+		DAEB35B0124E5743006C05B6 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				9AC7D9AD124D1F3300C94F17 /* MobileCoreServices.framework in Frameworks */,
 				9AC7D9B1124D1F5C00C94F17 /* libz.1.2.3.dylib in Frameworks */,
 				9AC7DAF3124D4E6B00C94F17 /* libexif.a in Frameworks */,
+				DAEB35B1124E5743006C05B6 /* libxml2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +182,7 @@
 				9AC7D9A8124D1F2800C94F17 /* SystemConfiguration.framework */,
 				9AC7D9AC124D1F3300C94F17 /* MobileCoreServices.framework */,
 				9AC7D9B0124D1F5C00C94F17 /* libz.1.2.3.dylib */,
+				DAEB35B0124E5743006C05B6 /* libxml2.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -369,7 +373,7 @@
 				GCC_PREFIX_HEADER = HackTO_Prefix.pch;
 				INFOPLIST_FILE = "HackTO-Info.plist";
 				PRODUCT_NAME = HackTO;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT_FXTRADEMOBILE)playground/HackTO/libexif-iphone-0.6.17//**";
+				USER_HEADER_SEARCH_PATHS = "/Users/paul/hackto/HackTO/mgtwitterengine//** $SDKROOT/usr/include/libxml2/** /Users/paul/hackto/HackTO/libexif-iphone-0.6.17//**";
 			};
 			name = Debug;
 		};

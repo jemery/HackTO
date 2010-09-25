@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class MGTwitterEngine;
 
 @interface CreateRequestViewController : UIViewController {
-
+	MGTwitterEngine *twitterEngine;
 }
 
 - (IBAction)tappedLogin;
+- (IBAction)sendTweet:(id)sender;
 
 @end
